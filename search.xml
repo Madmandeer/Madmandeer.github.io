@@ -4,6 +4,21 @@
   
     
     <entry>
+      <title><![CDATA[去掉&#65279隐藏字符解决办法]]></title>
+      <url>http://Madmandeer.github.io/2016/12/22/code/</url>
+      <content type="html"><![CDATA[<p>去掉&amp;#65279隐藏字符解决办法<br><a id="more"></a></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=432506345&auto=1&height=66"></iframe>
+
+
+<blockquote>
+<p>解决&amp;#65279隐藏字白色面板问题</p>
+</blockquote>
+<p><img src="/images/code.png" alt=""><br><br><br><img src="/images/code_2.png" alt=""></p>
+<p>昨天发现这个问题，但是不知道问题在哪里，在里面的视图和控制器看了一下，都没有问题，在把原来的备份覆盖也是一样，早上问了一下后台，后台查出了原因：<br>出现这种情况，大概因为用utf-8编辑记事本文件的时候没有把编码保存好，后台PHP输出之后，再保存的时候文件带上BOM，页面就会&amp;65279这个玩意；<br>解决方法：<br>下载个notepad++.exe，在把文件拉进去编辑，点击格式再选择“以UTF-8无BOM格式编码”，在保存就可以了</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[hexo]]></title>
       <url>http://Madmandeer.github.io/2016/11/23/hexo/</url>
       <content type="html"><![CDATA[<p>摘要:<br>零基础搭建博客<br><a id="more"></a><br>正文:</p>
